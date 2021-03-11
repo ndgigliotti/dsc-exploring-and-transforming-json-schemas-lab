@@ -1,0 +1,564 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "type": "object",
+    "properties": {
+        "meta": {
+            "type": "object",
+            "properties": {
+                "view": {
+                    "type": "object",
+                    "properties": {
+                        "id": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "attribution": {
+                            "type": "string"
+                        },
+                        "attributionLink": {
+                            "type": "string"
+                        },
+                        "averageRating": {
+                            "type": "integer"
+                        },
+                        "category": {
+                            "type": "string"
+                        },
+                        "createdAt": {
+                            "type": "integer"
+                        },
+                        "description": {
+                            "type": "string"
+                        },
+                        "displayType": {
+                            "type": "string"
+                        },
+                        "downloadCount": {
+                            "type": "integer"
+                        },
+                        "hideFromCatalog": {
+                            "type": "boolean"
+                        },
+                        "hideFromDataJson": {
+                            "type": "boolean"
+                        },
+                        "indexUpdatedAt": {
+                            "type": "integer"
+                        },
+                        "licenseId": {
+                            "type": "string"
+                        },
+                        "newBackend": {
+                            "type": "boolean"
+                        },
+                        "numberOfComments": {
+                            "type": "integer"
+                        },
+                        "oid": {
+                            "type": "integer"
+                        },
+                        "provenance": {
+                            "type": "string"
+                        },
+                        "publicationAppendEnabled": {
+                            "type": "boolean"
+                        },
+                        "publicationDate": {
+                            "type": "integer"
+                        },
+                        "publicationGroup": {
+                            "type": "integer"
+                        },
+                        "publicationStage": {
+                            "type": "string"
+                        },
+                        "rowClass": {
+                            "type": "string"
+                        },
+                        "rowsUpdatedAt": {
+                            "type": "integer"
+                        },
+                        "rowsUpdatedBy": {
+                            "type": "string"
+                        },
+                        "tableId": {
+                            "type": "integer"
+                        },
+                        "totalTimesRated": {
+                            "type": "integer"
+                        },
+                        "viewCount": {
+                            "type": "integer"
+                        },
+                        "viewLastModified": {
+                            "type": "integer"
+                        },
+                        "viewType": {
+                            "type": "string"
+                        },
+                        "columns": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "id": {
+                                        "type": "integer"
+                                    },
+                                    "name": {
+                                        "type": "string"
+                                    },
+                                    "dataTypeName": {
+                                        "type": "string"
+                                    },
+                                    "fieldName": {
+                                        "type": "string"
+                                    },
+                                    "position": {
+                                        "type": "integer"
+                                    },
+                                    "renderTypeName": {
+                                        "type": "string"
+                                    },
+                                    "format": {
+                                        "type": "object",
+                                        "properties": {
+                                            "precisionStyle": {
+                                                "type": "string"
+                                            },
+                                            "noCommas": {
+                                                "type": "string"
+                                            },
+                                            "align": {
+                                                "type": "string"
+                                            },
+                                            "displayStyle": {
+                                                "type": "string"
+                                            },
+                                            "view": {
+                                                "type": "string"
+                                            }
+                                        }
+                                    },
+                                    "flags": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "description": {
+                                        "type": "string"
+                                    },
+                                    "tableColumnId": {
+                                        "type": "integer"
+                                    },
+                                    "width": {
+                                        "type": "integer"
+                                    },
+                                    "cachedContents": {
+                                        "type": "object",
+                                        "properties": {
+                                            "largest": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "latitude": {
+                                                                "type": "string"
+                                                            },
+                                                            "longitude": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "latitude",
+                                                            "longitude"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "non_null": {
+                                                "type": "integer"
+                                            },
+                                            "average": {
+                                                "type": "string"
+                                            },
+                                            "null": {
+                                                "type": "integer"
+                                            },
+                                            "top": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "item": {
+                                                            "anyOf": [
+                                                                {
+                                                                    "type": "string"
+                                                                },
+                                                                {
+                                                                    "type": "object",
+                                                                    "properties": {
+                                                                        "latitude": {
+                                                                            "type": "string"
+                                                                        },
+                                                                        "longitude": {
+                                                                            "type": "string"
+                                                                        }
+                                                                    },
+                                                                    "required": [
+                                                                        "latitude",
+                                                                        "longitude"
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        "count": {
+                                                            "type": "integer"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "count",
+                                                        "item"
+                                                    ]
+                                                }
+                                            },
+                                            "smallest": {
+                                                "anyOf": [
+                                                    {
+                                                        "type": "string"
+                                                    },
+                                                    {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "latitude": {
+                                                                "type": "string"
+                                                            },
+                                                            "longitude": {
+                                                                "type": "string"
+                                                            }
+                                                        },
+                                                        "required": [
+                                                            "latitude",
+                                                            "longitude"
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            "sum": {
+                                                "type": "string"
+                                            }
+                                        },
+                                        "required": [
+                                            "largest",
+                                            "non_null",
+                                            "null",
+                                            "smallest",
+                                            "top"
+                                        ]
+                                    },
+                                    "subColumnTypes": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "dataTypeName",
+                                    "fieldName",
+                                    "format",
+                                    "id",
+                                    "name",
+                                    "position",
+                                    "renderTypeName"
+                                ]
+                            }
+                        },
+                        "grants": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "inherited": {
+                                        "type": "boolean"
+                                    },
+                                    "type": {
+                                        "type": "string"
+                                    },
+                                    "flags": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    }
+                                },
+                                "required": [
+                                    "flags",
+                                    "inherited",
+                                    "type"
+                                ]
+                            }
+                        },
+                        "license": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "name"
+                            ]
+                        },
+                        "metadata": {
+                            "type": "object",
+                            "properties": {
+                                "rdfSubject": {
+                                    "type": "string"
+                                },
+                                "rdfClass": {
+                                    "type": "string"
+                                },
+                                "custom_fields": {
+                                    "type": "object",
+                                    "properties": {
+                                        "Common Core": {
+                                            "type": "object",
+                                            "properties": {
+                                                "Contact Email": {
+                                                    "type": "string"
+                                                },
+                                                "Described By": {
+                                                    "type": "string"
+                                                },
+                                                "References": {
+                                                    "type": "string"
+                                                },
+                                                "Contact Name": {
+                                                    "type": "string"
+                                                },
+                                                "Program Code": {
+                                                    "type": "string"
+                                                },
+                                                "Publisher": {
+                                                    "type": "string"
+                                                },
+                                                "Bureau Code": {
+                                                    "type": "string"
+                                                },
+                                                "Public Access Level": {
+                                                    "type": "string"
+                                                }
+                                            },
+                                            "required": [
+                                                "Bureau Code",
+                                                "Contact Email",
+                                                "Contact Name",
+                                                "Described By",
+                                                "Program Code",
+                                                "Public Access Level",
+                                                "Publisher",
+                                                "References"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "Common Core"
+                                    ]
+                                },
+                                "rowIdentifier": {
+                                    "type": "string"
+                                },
+                                "rowLabel": {
+                                    "type": "string"
+                                },
+                                "availableDisplayTypes": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "string"
+                                    }
+                                },
+                                "renderTypeConfig": {
+                                    "type": "object",
+                                    "properties": {
+                                        "visible": {
+                                            "type": "object",
+                                            "properties": {
+                                                "table": {
+                                                    "type": "boolean"
+                                                }
+                                            },
+                                            "required": [
+                                                "table"
+                                            ]
+                                        }
+                                    },
+                                    "required": [
+                                        "visible"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "availableDisplayTypes",
+                                "custom_fields",
+                                "rdfClass",
+                                "rdfSubject",
+                                "renderTypeConfig",
+                                "rowIdentifier",
+                                "rowLabel"
+                            ]
+                        },
+                        "owner": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "displayName": {
+                                    "type": "string"
+                                },
+                                "screenName": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "displayName",
+                                "id",
+                                "screenName",
+                                "type"
+                            ]
+                        },
+                        "query": {
+                            "type": "object"
+                        },
+                        "rights": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "tableAuthor": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "string"
+                                },
+                                "displayName": {
+                                    "type": "string"
+                                },
+                                "screenName": {
+                                    "type": "string"
+                                },
+                                "type": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "displayName",
+                                "id",
+                                "screenName",
+                                "type"
+                            ]
+                        },
+                        "tags": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "flags": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": [
+                        "attribution",
+                        "attributionLink",
+                        "averageRating",
+                        "category",
+                        "columns",
+                        "createdAt",
+                        "description",
+                        "displayType",
+                        "downloadCount",
+                        "flags",
+                        "grants",
+                        "hideFromCatalog",
+                        "hideFromDataJson",
+                        "id",
+                        "indexUpdatedAt",
+                        "license",
+                        "licenseId",
+                        "metadata",
+                        "name",
+                        "newBackend",
+                        "numberOfComments",
+                        "oid",
+                        "owner",
+                        "provenance",
+                        "publicationAppendEnabled",
+                        "publicationDate",
+                        "publicationGroup",
+                        "publicationStage",
+                        "query",
+                        "rights",
+                        "rowClass",
+                        "rowsUpdatedAt",
+                        "rowsUpdatedBy",
+                        "tableAuthor",
+                        "tableId",
+                        "tags",
+                        "totalTimesRated",
+                        "viewCount",
+                        "viewLastModified",
+                        "viewType"
+                    ]
+                }
+            },
+            "required": [
+                "view"
+            ]
+        },
+        "data": {
+            "type": "array",
+            "items": {
+                "type": "array",
+                "items": {
+                    "anyOf": [
+                        {
+                            "type": [
+                                "integer",
+                                "null",
+                                "string"
+                            ]
+                        },
+                        {
+                            "type": "array",
+                            "items": {
+                                "type": [
+                                    "boolean",
+                                    "null",
+                                    "string"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "required": [
+        "data",
+        "meta"
+    ]
+}
